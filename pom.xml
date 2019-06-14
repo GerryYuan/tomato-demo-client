@@ -8,5 +8,22 @@
   <artifactId>tomato-framework-demo-client</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <properties>
+    <tomato-framework.version>1.0.1-SNAPSHOT</tomato-framework.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tomato.framework</groupId>
+      <artifactId>tomato-framework-plugin-rmi</artifactId>
+      <version>${tomato-framework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tomato.framewrok.demo.facade</groupId>
+      <artifactId>tomato-framework-demo-facade</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
 
 </project>
