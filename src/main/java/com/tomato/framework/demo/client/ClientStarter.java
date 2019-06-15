@@ -16,7 +16,7 @@ public class ClientStarter {
     public static void main(String[] args)
         throws RemoteException, InterruptedException {
 //        Discovery discovery = new RmiDiscovery();
-        Discovery discovery = new ZKDiscovery("127.0.0.1:2181", "rmi://127.0.0.1:18081");
+        Discovery discovery = new ZKDiscovery("127.0.0.1:2181");
         HelloWorld helloWorld = discovery.getBean(HelloWorld.class);
         System.out.println(helloWorld.hello("hello gerry!"));
         PostDemo postDemo = new PostDemo();
